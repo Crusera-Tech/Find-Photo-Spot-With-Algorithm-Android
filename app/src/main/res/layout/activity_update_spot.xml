@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_admin"
+    android:scrollbars="vertical"
+    android:padding="3dp"
+    tools:context=".UpdateSpot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <!-- Header -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_tambahspot_250"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update Data Spot"
+            android:layout_gravity="center"
+            android:textColor="#212121"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/ematodas_demo"/>
+
+        <!-- Nama Spot -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Nama Spot"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/edit_namaspot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Nama Spot Foto"
+            android:textSize="8pt" />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Deksripsi Spot"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/edit_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:textSize="8pt"
+            android:autofillHints=""
+            android:hint="Isikan Deskripsi Spot"
+            android:layout_gravity="top"
+            android:singleLine="false"
+            android:lines="5"/>
+
+        <!-- Biaya  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya Sewa"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/edit_infobiaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Biaya Sewa"
+            android:textSize="8pt"
+            />
+
+        <!-- Rekomendasi waktu  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi Waktu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/edit_rekom_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Rekomendasi Waktu"
+            android:textSize="8pt"
+            />
+
+        <!-- Kategori -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori Spot"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/edit_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Kategori Spot"
+            android:textSize="8pt"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_placepicker"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="Pick Place"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapelogin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:text="*Klik Pick Place Untuk Menentukan Titik Spot"
+            android:textColor="#212121" />
+
+        <!-- Latitude -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Latitude"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Latitude"
+            android:textSize="8pt" />
+
+        <!-- Longitude -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Longitude"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Longitude"
+            android:textSize="8pt" />
+
+        <!-- Alamat -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Alamat"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/alamat_spot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:autofillHints=""
+            android:hint="Alamat"
+            android:textSize="8pt" />
+
+        <!-- Upload Foto 1 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/gambarspot1"
+            />
+
+        <Button
+            android:id="@+id/btn_editfoto_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="Upload Foto 1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:shadowColor="@android:color/transparent"
+            android:background="@drawable/shapelogin"/>
+
+        <!-- Upload Foto 2 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/gambarspot2"
+            />
+
+        <Button
+            android:id="@+id/btn_editfoto_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:text="Upload Foto 2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:shadowColor="@android:color/transparent"
+            android:background="@drawable/shapelogin"/>
+
+        <!-- Upload Foto 3 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/gambarspot3"
+            />
+
+        <Button
+            android:id="@+id/btn_editfoto_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Upload Foto 3"
+            android:shadowColor="@android:color/transparent"
+            android:background="@drawable/shapelogin"/>
+
+
+        <Button
+            android:id="@+id/btn_editdata"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Update Data"
+            android:textColor="#e3f2fd"
+            android:shadowColor="@android:color/transparent"
+            android:background="@drawable/shape_button"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/next"
+            android:background="@mipmap/next_logo80"
+            android:clickable="true"
+            android:onClick="next"/>
+
+    </LinearLayout>
+
+</ScrollView>

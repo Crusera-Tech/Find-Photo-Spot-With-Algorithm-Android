@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_detailfoto"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp">
+
+    </LinearLayout>
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rute" />
+
+    <SurfaceView
+        android:layout_width="200dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/surface_atas"
+        android:background="#40C4FF"
+        android:layout_height="20dp" />
+
+    <SurfaceView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/surface_atas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/surface_bawah"
+        android:layout_alignRight="@+id/surface_atas"
+        android:layout_alignEnd="@+id/surface_atas"
+        android:background="@android:color/background_light"
+        android:alpha="0.75" />
+
+
+    <TextView
+        android:text="0 Menit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/algonya"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/duration_rute"
+        android:textStyle="normal|bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="Rute Terdekat"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/algonya"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="0 Km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance_rute"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/duration_rute"
+        android:layout_alignLeft="@+id/duration_rute"
+        android:layout_alignStart="@+id/duration_rute" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost_rute"
+        android:layout_alignBottom="@+id/surface_bawah"
+        android:layout_alignLeft="@+id/distance_rute"
+        android:layout_alignStart="@+id/distance_rute" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:background="@drawable/backgroud_detailfoto"
+    android:orientation="vertical"
+    tools:context=".Admin_DetailInfoSpot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/detailgambar_1"
+                    android:layout_marginRight="5dp"
+                    />
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/detailgambar_2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    />
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/detailgambar_3"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Swipe Left or Right To See Another Picture"
+        android:textColor="#64b5f6"
+        android:textSize="12dp"
+        android:gravity="center_horizontal"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:id="@+id/nama_spot_foto"
+                android:layout_width="424dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/ematodas_demo"
+                android:text="Nama Spot"
+                android:textAlignment="center"
+                android:textColor="#212121"
+                android:textSize="25dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/lines"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/deskripsi_spot"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/lines"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya Masuk / Sewa"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ematodas_demo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya Sewa"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/biaya_spot"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/lines"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi Waktu"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ematodas_demo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi Waktu"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/rekomendasi_wkt_spot"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/lines"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori Spot"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ematodas_demo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/kategori_spot"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/lines"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ematodas_demo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:layout_gravity="center"
+                android:textColor="#212121"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/alamatSpot"
+                />
+
+            <Button
+                android:id="@+id/btn_editdata"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Edit Data Spot"
+                android:textColor="#eceff1"
+                android:background="@drawable/shape_button"/>
+
+            <Button
+                android:id="@+id/btn_hapusdata"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Hapus Data Spot"
+                android:textColor="#eceff1"
+                android:background="@drawable/shape_button"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id= "@+id/fab_back"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/ic_back_black_24dp"
+                app:fabSize="normal"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

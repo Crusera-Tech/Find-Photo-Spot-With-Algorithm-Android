@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atas_menuutama"
+    tools:context=".MenuUtama">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@mipmap/ic_fyos_big"/>
+
+            <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Photographer"
+            android:fontFamily="@font/ortisan_signature"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginTop="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00CCFF"
+                android:text="~Enjoy This Application~"
+                android:fontFamily="@font/ortisan_signature"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_marginTop="40dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/klik_titik_spot"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@mipmap/ic_maps_200">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Peta Titik Spot"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/klik_lihat_spot"
+                        android:src="@mipmap/ic_searchspot_200"
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="Daftar Spot"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/klik_terdekat"
+                        android:src="@mipmap/ic_list_terdekat"
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:text="Spot Terdekat"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/klik_pengaturan"
+                        android:src="@mipmap/ic_settings_200"
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:text="Pengaturan"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

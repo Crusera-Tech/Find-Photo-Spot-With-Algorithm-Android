@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#424242">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_fyoslauncher"
+        />
+    <TextView
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:text="Find Your Own Spot"
+        android:layout_gravity="center"
+        android:textColor="#b2ebf2"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/ematodas_demo"/>
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="App Version 1.0"
+        android:layout_gravity="center"
+        android:textColor="#fafafa"
+        android:textSize="18sp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="Copyright 2019"
+        android:layout_gravity="center"
+        android:textColor="#fafafa"
+        android:textSize="15sp"
+        android:layout_margin="5dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Close"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:id="@+id/close"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>

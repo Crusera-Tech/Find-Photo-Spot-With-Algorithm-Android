@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "889367060074",
+    "firebase_url": "https://dbspotfoto.firebaseio.com",
+    "project_id": "dbspotfoto",
+    "storage_bucket": "dbspotfoto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889367060074:android:320cdcf5d1808fc3547413",
+        "android_client_info": {
+          "package_name": "com.example.findit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889367060074-n7qev1gmpvcheqbecov4gq5cftd2tjek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDllBy4IDAS4gXiaA1h3RoYWtCT1m0AnPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889367060074-n7qev1gmpvcheqbecov4gq5cftd2tjek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
